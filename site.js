@@ -1,6 +1,6 @@
 // site.js — Hexposure mini-site shared behavior
 (function(){
-  try { var t = localStorage.getItem('hxp-theme') || 'dark'; document.documentElement.setAttribute('data-theme', t); } catch(e){}
+  try { var t = localStorage.getItem('hxp-theme') || 'light'; document.documentElement.setAttribute('data-theme', t); } catch(e){}
 })();
 function hxpToggleTheme(){
   var r = document.documentElement;
