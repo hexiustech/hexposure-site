@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Hexposure — Voyez tout. Sachez ce qui est en jeu. Prouvez votre sécurité.</title>
+<meta name="description" content="Hexposure cartographie toute votre surface d'attaque externe, classe chaque exposition selon le risque d'affaires réel et la transforme en un score de santé prêt pour le conseil. Aucun agent, aucun accès interne." />
+<link rel="alternate" hreflang="en" href="https://hexposure.ca/en/">
+<link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/">
+<link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#110e1c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/site.css">
+<script src="/site.js"></script>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="/fr/index.html" aria-label="Accueil Hexposure">
+      <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true">
+  <defs><linearGradient id="gN" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c3aef2"/><stop offset="52%" stop-color="#8b6ce6"/><stop offset="100%" stop-color="#5e3fb0"/></linearGradient></defs>
+  <path d="M50 8 L86.6 29 L86.6 71 L50 92 L13.4 71 L13.4 29 Z" fill="none" stroke="url(#gN)" stroke-width="4.5"/>
+  <g stroke="#a78bf0" stroke-width="2.6" fill="none" stroke-linejoin="round"><path d="M50 29 L68.3 39.5 L68.3 60.5 L50 71 L31.7 60.5 L31.7 39.5 Z"/><line x1="50" y1="29" x2="50" y2="8"/><line x1="68.3" y1="39.5" x2="86.6" y2="29"/><line x1="68.3" y1="60.5" x2="86.6" y2="71"/><line x1="50" y1="71" x2="50" y2="92"/><line x1="31.7" y1="60.5" x2="13.4" y2="71"/><line x1="31.7" y1="39.5" x2="13.4" y2="29"/></g>
+</svg>
+
+      <span class="lw"><span class="h">Hex</span>posure</span>
+    </a>
+    <div class="nav-links">
+      <a href="/fr/platform.html">Plateforme</a>
+      <a href="/fr/why.html">Pourquoi Hexposure</a>
+    </div>
+    <div class="nav-cta">
+      <a class="lang-switch" href="/en/" aria-label="Langue" hreflang="en">EN</a>
+      <button class="theme-toggle" type="button" title="Changer de thème" aria-label="Changer de thème" onclick="hxpToggleTheme()">
+        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <a class="btn primary" href="/fr/index.html#join">Rejoindre la liste d'attente</a>
+    </div>
+  </div>
+</nav>
+
+
+<header class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="wrap hero-inner">
+    <div>
+      <span class="badge"><span class="dot"></span>Bêta privée · gestion de la surface d'attaque externe</span>
+      <h1>Voyez tout. Sachez ce qui est en&nbsp;jeu. <span class="grad">Prouvez votre sécurité.</span></h1>
+      <p class="lead">Hexposure cartographie toute votre surface externe en un <b>inventaire vivant</b>, classe chaque exposition selon le <b>risque d'affaires réel</b>, et la transforme en un <b>score de santé à présenter au conseil</b>. Aucun agent, aucun accès interne.</p>
+      <div class="capture" id="cap-hero">
+  <form onsubmit="return joinWaitlist(event, 'cap-hero')">
+    <input type="email" name="email" placeholder="vous@entreprise.com" required aria-label="Courriel professionnel" autocomplete="email" />
+    <button class="btn primary" type="submit">Demander l'accès
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+  </form>
+  <div class="fine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Courriel professionnel seulement. Pas de pourriel — juste votre invitation et les nouvelles du produit.</div>
+  <div class="thanks"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div><div class="tx"><b>Vous êtes sur la liste.</b><span>Nous vous enverrons votre invitation.</span></div></div>
+</div>
+
+      <div class="hero-stats">
+        <div class="st"><div class="v"><span class="accent">3&times;</span> de visibilité</div><div class="l">vs. la compétition</div></div>
+        <div class="st"><div class="v">1 tâche priorisée</div><div class="l">pas 765 alertes</div></div>
+        <div class="st"><div class="v">Score de santé</div><div class="l">Simple et facile à présenter au conseil</div></div>
+      </div>
+    </div>
+
+    <div class="panel reveal">
+      <div class="panel-bar">
+        <div class="dots"><i></i><i></i><i></i></div>
+        <div class="addr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>app.hexposure.ca/dashboard</div>
+      </div>
+      <div class="panel-app">
+        <div class="pa-head">
+          <div><div class="pa-k">Portefeuille</div><div class="pa-portfolio mono">Tous les domaines</div></div>
+          <div><div class="pa-k">Score de santé</div><div class="pa-health">À risque</div></div>
+          <div><div class="pa-k">Tendance du score</div>
+            <svg class="pa-spark" viewBox="0 0 120 34" preserveAspectRatio="none" fill="none" aria-hidden="true">
+              <defs><linearGradient id="spk" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#ff8a3d" stop-opacity="0.35"/><stop offset="100%" stop-color="#ff8a3d" stop-opacity="0"/></linearGradient></defs>
+              <path d="M2,23 L18,22 L34,23 L50,18 L66,20 L82,15 L98,8 L118,12 L118,34 L2,34 Z" fill="url(#spk)"/>
+              <path d="M2,23 L18,22 L34,23 L50,18 L66,20 L82,15 L98,8 L118,12" stroke="#ff8a3d" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="pa-body">
+          <div class="gauge"><span class="gv">47</span><span class="gx">/ 100</span></div>
+          <div class="pa-msgcol">
+            <span class="pa-action"><span class="d"></span>Action requise</span><span class="pa-scope">sur 2 domaines</span>
+            <p class="pa-msg">Votre dernier balayage a signalé <b>14 critiques</b> et <b class="h">14 de gravité élevée</b>. Corrigez-les avant le prochain balayage.</p>
+            <div class="pa-meta"><div><span>Variation du score</span><b class="crit">−30</b></div><div><span>Résolus depuis le dernier</span><b class="good">131</b></div></div>
+          </div>
+        </div>
+        <div class="pa-cats">
+          <div class="pa-cats-head"><span class="t">Constatations par catégorie</span><span class="n"><b>765</b> au total</span></div>
+          <div class="catrow"><span class="cl"><i style="background:var(--text-4)"></i>Autres</span><div class="ctrack"><div class="cbar" style="width:100%;background:var(--text-4)"></div></div><span class="cn">296</span></div>
+          <div class="catrow"><span class="cl"><i style="background:#ff5b9a"></i>Exposition web</span><div class="ctrack"><div class="cbar" style="width:83%;background:#ff5b9a"></div></div><span class="cn">247</span></div>
+          <div class="catrow"><span class="cl"><i style="background:var(--accent)"></i>Surface d'attaque</span><div class="ctrack"><div class="cbar" style="width:71%;background:var(--accent)"></div></div><span class="cn">210</span></div>
+          <div class="catrow"><span class="cl"><i style="background:#5eb1ff"></i>Gestion des vulnérabilités</span><div class="ctrack"><div class="cbar" style="width:3%;background:#5eb1ff"></div></div><span class="cn">6</span></div>
+          <div class="catrow"><span class="cl"><i style="background:var(--good)"></i>Sécurité du courriel</span><div class="ctrack"><div class="cbar" style="width:3%;background:var(--good)"></div></div><span class="cn">6</span></div>
+        </div>
+        <div class="pa-domains">
+          <span class="dchip"><span class="dtop"><span class="dd" style="background:var(--accent)"></span><span class="dn">yourcompany.com</span><span class="ds">42</span></span><span class="dbot"><span class="dtag crit">1 critique</span><span class="dtag assets">180 actifs</span></span></span>
+          <span class="dchip"><span class="dtop"><span class="dd" style="background:#ff5b9a"></span><span class="dn">yourcompany.ca</span><span class="ds">62</span></span><span class="dbot"><span class="dtag crit">13 critiques</span><span class="dtag assets">228 actifs</span></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="wrap">
+    <h2 class="strip-title">Votre inventaire vivant couvre</h2>
+    <div class="strip-inner"><span class="src">sous-domaines</span><span class="src">IP &amp; services</span><span class="src">points de terminaison</span><span class="src">stockage infonuagique</span><span class="src">certificats</span><span class="src">fichiers exposés</span><span class="src">domaines sosies</span><span class="src">application</span><span class="src">api</span><span class="src">secrets</span><span class="src">brèches</span><span class="src">CMS</span>
+      <span class="src more">et plus encore</span>
+    </div>
+    <div class="strip-extra">
+      <div class="strip-stats">
+        <div class="sstat"><b>30+</b><span>techniques de reconnaissance</span></div>
+        <div class="sstat"><b>200+</b><span>vérifications par domaine</span></div>
+        <div class="sstat"><b>25+</b><span>catégories de risque</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3-PILLAR ARC -->
+<section class="block" id="how">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="kicker center">Une plateforme, trois rôles</span>
+      <h2>Des angles morts à un rapport pour l'équipe de gestion.</h2>
+      <p>La plupart des outils s'arrêtent à une liste de vulnérabilités. Hexposure expose vos risques d'affaires et vous offre un score de santé qui fais du sens.</p>
+    </div>
+    <div class="pillars">
+      <a class="pcard reveal" href="/fr/platform.html#visibility">
+        <span class="step">01 — VISIBILITÉ</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 17 9 5 9-5"/><path d="m3 12 9 5 9-5"/></svg></div>
+        <h3>Voyez <span>tout</span> ce que vous exposez</h3>
+        <p>Un inventaire vivant de chaque domaine, serveur, point de terminaison, certificat et fichier exposé — <b>y compris ceux que vous avez oubliés.</b> On ne peut pas agir sur ce qu'on ne voit pas.</p>
+        <span class="more">Explorer la visibilité <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="pcard reveal" href="/fr/platform.html#business-risk">
+        <span class="step">02 — RISQUE D'AFFAIRES</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <h3>Sachez ce qui est <span>en jeu</span></h3>
+        <p>Chaque exposition est pondérée selon son impact réel — données clients, revenus, réputation — et reliée en chemins d'attaque, pour que vous obteniez <b>la poignée qui compte</b>, pas 765 alertes.</p>
+        <span class="more">Explorer le risque d'affaires <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+      <a class="pcard reveal" href="/fr/platform.html#assurance">
+        <span class="step">03 — ASSURANCE</span>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/></svg></div>
+        <h3>Prouvez que vous êtes <span>couvert</span></h3>
+        <p>Un score de santé unique qui évolue à mesure que vous corrigez, appuyé par un rapport prêt pour le conseil et un conseiller humain. Fiable <b>parce qu'il repose sur plus de visibilité</b> que n'importe quelle notation.</p>
+        <span class="more">Explorer l'assurance <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+      </a>
+    </div>
+    <div class="arc-line reveal"><b>Voyez-le</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><b>Classez-le par risque</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><b>Corrigez l'essentiel</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><b>Un score défendable</b></div>
+  </div>
+</section>
+
+<!-- ATTACK PATHS -->
+<section class="block tight" id="paths">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">Chemins d'attaque</span>
+      <h2>Une brèche critique est rarement un seul bogue.</h2>
+      <p>Des constatations isolées semblent inoffensives. Hexposure les relie pour former le trajet exact qu'emprunterait un attaquant — et votre score pondère la chaîne, pour que vous la brisiez au maillon le plus faible.</p>
+    </div>
+    <div class="path reveal">
+      <div class="node"><div class="step">ÉTAPE 01</div><span class="sev low">Faible</span><h4>Sous-domaine oublié</h4><p>Un hôte de préproduction que personne n'a démantelé.</p><div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
+      <div class="node"><div class="step">ÉTAPE 02</div><span class="sev med">Moyen</span><h4>Bundle JS exposé</h4><p>Son frontal embarque une clé d'API en dur.</p><div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
+      <div class="node"><div class="step">ÉTAPE 03</div><span class="sev high">Élevé</span><h4>API non authentifiée</h4><p>Cette clé déverrouille un point de terminaison qui liste les dossiers clients.</p><div class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div></div>
+      <div class="node"><div class="step">ÉTAPE 04</div><span class="sev crit">Crit.</span><h4>Exposition complète des données</h4><p>Accessible à tous, sans connexion. <b>Corrigez l'étape 02 et le chemin s'effondre.</b></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="block tight" id="loop">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kicker">La boucle</span>
+      <h2>De l'inscription au correctif, en quatre étapes.</h2>
+      <p>Votre premier balayage démarre dès que vos domaines sont vérifiés. Ensuite, nous le relançons chaque mois et revérifions vos correctifs automatiquement.</p>
+    </div>
+    <div class="flow">
+      <div class="fstep reveal"><div class="n">01</div><h4>Découvrir</h4><p>Nous énumérons chaque sous-domaine, IP, service, point de terminaison et certificat lié à vos domaines — pour bâtir un inventaire vivant.</p></div>
+      <div class="fstep reveal"><div class="n">02</div><h4>Tester</h4><p>Chaque actif est sondé de l'extérieur : ports ouverts, TLS faible, panneaux exposés, secrets divulgués, fichiers égarés, sosies.</p></div>
+      <div class="fstep reveal"><div class="n">03</div><h4>Classer</h4><p>Les constatations sont pondérées selon la gravité, l'exploitabilité et l'impact d'affaires en un score et une liste de priorités classée.</p></div>
+      <div class="fstep reveal"><div class="n">04</div><h4>Corriger &amp; revérifier</h4><p>Vous traitez la liste avec un accompagnement étape par étape ; le prochain balayage confirme chaque correctif automatiquement.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="join">
+  <div class="cta-bg"></div>
+  <div class="wrap cta-inner">
+    <span class="kicker center">Bêta privée</span>
+    <h2>Voyez-le. Classez-le. Prouvez-le.</h2>
+    <p>Rejoignez la liste d'attente pour un accès anticipé. Nous lancerons votre premier balayage externe et vous guiderons à travers votre inventaire, vos risques et votre score.</p>
+    <div class="capture center" id="cap-foot">
+  <form onsubmit="return joinWaitlist(event, 'cap-foot')">
+    <input type="email" name="email" placeholder="vous@entreprise.com" required aria-label="Courriel professionnel" autocomplete="email" />
+    <button class="btn primary" type="submit">Rejoindre la liste d'attente
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+  </form>
+  <div class="fine"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Places limitées dans la cohorte actuelle.</div>
+  <div class="thanks"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></div><div class="tx"><b>Vous êtes sur la liste.</b><span>Nous vous contacterons pour planifier votre premier balayage.</span></div></div>
+</div>
+
+  </div>
+</section>
+
+
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+  <defs><linearGradient id="gF" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c3aef2"/><stop offset="52%" stop-color="#8b6ce6"/><stop offset="100%" stop-color="#5e3fb0"/></linearGradient></defs>
+  <path d="M50 8 L86.6 29 L86.6 71 L50 92 L13.4 71 L13.4 29 Z" fill="none" stroke="url(#gF)" stroke-width="4.5"/>
+  <g stroke="#a78bf0" stroke-width="2.6" fill="none" stroke-linejoin="round"><path d="M50 29 L68.3 39.5 L68.3 60.5 L50 71 L31.7 60.5 L31.7 39.5 Z"/><line x1="50" y1="29" x2="50" y2="8"/><line x1="68.3" y1="39.5" x2="86.6" y2="29"/><line x1="68.3" y1="60.5" x2="86.6" y2="71"/><line x1="50" y1="71" x2="50" y2="92"/><line x1="31.7" y1="60.5" x2="13.4" y2="71"/><line x1="31.7" y1="39.5" x2="13.4" y2="29"/></g>
+</svg>
+
+      <span class="lw"><span class="h">Hex</span>posure</span>
+      <p>Gestion de la surface d'attaque externe. Voyez tout, corrigez l'essentiel, prouvez votre sécurité.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Produit</h5>
+      <a href="/fr/platform.html#visibility">Visibilité</a>
+      <a href="/fr/platform.html#business-risk">Risque d'affaires</a>
+      <a href="/fr/platform.html#assurance">Assurance</a>
+      <a href="/fr/platform.html">Aperçu de la plateforme</a>
+    </div>
+    <div class="foot-col">
+      <h5>Entreprise</h5>
+      <a href="/fr/why.html">Pourquoi Hexposure</a>
+      <a href="/fr/why.html#compare">vs. notations</a>
+      <a href="/fr/index.html#join">Rejoindre la liste d'attente</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap">
+      <span class="copy">© 2026 Hexposure · un produit Hexius</span>
+      <nav class="legal-links" aria-label="Legal">
+        <a href="/fr/privacy.html">Politique de confidentialité</a>
+        <a href="/fr/terms.html">Conditions d'utilisation</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
