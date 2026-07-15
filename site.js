@@ -20,8 +20,7 @@ var HXP_FORM = {
     company: 'entry.46439575',
     company2: 'entry.1960370376',
     service: 'entry.610128610',
-    message: 'entry.835111868',
-    consent: 'entry.2115631709'
+    message: 'entry.835111868'
   }
 };
 function hxpIsFr(){ return document.documentElement.lang === 'fr'; }
@@ -43,17 +42,18 @@ function joinWaitlist(e, capId){
   var btnHtml = btn ? btn.innerHTML : '';
   if(btn){ btn.disabled = true; btn.textContent = fr ? 'Envoi…' : 'Submitting…'; }
 
-  // Only the email is user-provided; fill every other Google Form field with
-  // blank data and tag the lead as "hexposure.ca waitlist" so it's recognizable.
+  // Only the email is user-provided. Every other field on this Google Form is
+  // REQUIRED (incl. a "Service of Interest" checkbox), so blanks get rejected
+  // with HTTP 400. Fill the text fields with the "hexposure.ca waitlist" tag and
+  // pick the mandatory valid service option so the lead records recognizably.
   var TAG = 'hexposure.ca waitlist';
   var data = {};
   data[HXP_FORM.entry.name]     = TAG;
   data[HXP_FORM.entry.email]    = email;
-  data[HXP_FORM.entry.company]  = '';
-  data[HXP_FORM.entry.company2] = '';
-  data[HXP_FORM.entry.service]  = '';
+  data[HXP_FORM.entry.company]  = TAG;
+  data[HXP_FORM.entry.company2] = TAG;
+  data[HXP_FORM.entry.service]  = 'General inquiry / Demande Générale';
   data[HXP_FORM.entry.message]  = TAG;
-  data[HXP_FORM.entry.consent]  = '';
 
   hxpSubmitWaitlist(data, function(ok){
     if(ok){
