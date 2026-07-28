@@ -63,9 +63,8 @@ button { font-family: inherit; cursor: pointer; }
 @media (max-width: 520px) { .nav-cta .btn.primary { display: none; } }
 
 /* KICKER / HEADS */
-.kicker { display: inline-flex; align-items: center; gap: 8px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.10em; text-transform: uppercase; color: var(--accent-2); font-weight: 600; }
-.kicker::before { content: ""; width: 18px; height: 1px; background: var(--accent-2); opacity: 0.6; }
-.kicker.center { justify-content: center; } .kicker.center::before { display: none; }
+.kicker { display: inline-flex; align-items: center; font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-2); font-weight: 600; }
+.kicker.center { justify-content: center; }
 section { position: relative; }
 .sec-head { max-width: 680px; }
 .sec-head.center { margin: 0 auto; text-align: center; }
@@ -188,7 +187,7 @@ section { position: relative; }
 @media (max-width: 880px) { .pillars { grid-template-columns: 1fr; } }
 .pcard { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px 26px 24px; display: flex; flex-direction: column; position: relative; overflow: hidden; transition: 0.18s; }
 .pcard:hover { border-color: var(--border-strong); transform: translateY(-3px); }
-.pcard .step { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-4); font-weight: 600; letter-spacing: 0.08em; }
+.pcard .step { font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: var(--text-4); font-weight: 600; letter-spacing: 0.08em; }
 .pcard .ic { width: 46px; height: 46px; border-radius: 12px; background: var(--accent-glow); border: 1px solid var(--border-2); color: var(--accent); display: grid; place-items: center; margin: 14px 0 16px; }
 .pcard .ic svg { width: 23px; height: 23px; }
 .pcard h3 { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 9px; }
@@ -347,6 +346,8 @@ footer { border-top: 1px solid var(--border); background: var(--bg-2); }
 .foot-bottom { border-top: 1px solid var(--border); }
 .foot-bottom .wrap { padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; gap: 16px 26px; flex-wrap: wrap; }
 .foot-bottom .copy { color: var(--text-4); font-size: 12.5px; }
+.foot-bottom .copy a { color: var(--text-3); text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--border-strong); transition: 0.15s; }
+.foot-bottom .copy a:hover { color: var(--text-2); text-decoration-color: var(--accent); }
 .foot-bottom .legal-links { display: flex; align-items: center; gap: 20px; }
 .foot-bottom .legal-links a { color: var(--text-4); font-size: 12.5px; transition: 0.15s; }
 .foot-bottom .legal-links a:hover { color: var(--text-2); }
