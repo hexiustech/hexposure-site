@@ -1,0 +1,176 @@
+# https://hexposure.ca/robots.txt
+# Marketing site — everything here is public by design.
+
+User-agent: *
+Allow: /
+
+# Nothing is Disallowed for search here on purpose. The root document is a
+# redirect stub that keeps itself out of the index with <meta robots="noindex">
+# + a canonical to /fr/ — and a crawler has to be allowed to fetch a page to
+# read that noindex. Blocking it here would strand it as an untitled result.
+
+# --- AI crawlers -----------------------------------------------------------
+# Policy: indexable for SEARCH only. No model training, no use as AI input /
+# RAG grounding context. Declared machine-readably below (Cloudflare Content
+# Signals), in /ai.txt, and via <meta name="tdm-reservation"> on every page.
+#
+# Content-Signal: search=yes, ai-input=no, ai-train=no
+#   search   = show this page as a link/snippet in a result list  -> allowed
+#   ai-input = feed this page to a model to generate an answer    -> NOT allowed
+#   ai-train = use this page as training/fine-tuning corpus       -> NOT allowed
+Content-Signal: search=yes, ai-input=no, ai-train=no
+
+# Conventional search engines — allowed. These index pages and send people here
+# as links, which is the whole point of the site.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Link-preview fetchers — allowed, or shared links unfurl blank in chat apps.
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+User-agent: Slackbot-LinkExpanding
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: Discordbot
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# ---------------------------------------------------------------------------
+# AI crawlers — DISALLOWED, both the training-corpus collectors and the
+# fetch-to-generate-an-answer agents. Note Google-Extended / Applebot-Extended
+# only gate AI use: plain Googlebot and Applebot above still index the site.
+# ---------------------------------------------------------------------------
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: Claude-User
+Disallow: /
+
+User-agent: Claude-SearchBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Google / Apple AI surfaces (search indexing is unaffected)
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Perplexity-User
+Disallow: /
+
+# Meta
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: meta-externalfetcher
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+# Datasets, scrapers, and everyone else training on the open web
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: cohere-training-data-crawler
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: PanguBot
+Disallow: /
+
+User-agent: Webzio-Extended
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+Sitemap: https://hexposure.ca/sitemap.xml

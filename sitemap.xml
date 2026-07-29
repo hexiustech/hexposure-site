@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://hexposure.ca/en/</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/fr/</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/en/platform.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/fr/platform.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/platform.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/platform.html"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/en/privacy.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/fr/privacy.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/privacy.html"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/en/terms.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/fr/terms.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/terms.html"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/en/why.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/why.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/why.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/why.html"/>
+  </url>
+  <url>
+    <loc>https://hexposure.ca/fr/why.html</loc>
+    <lastmod>2026-07-29T00:07:10+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://hexposure.ca/en/why.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/why.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/why.html"/>
+  </url>
+</urlset>

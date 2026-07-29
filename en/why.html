@@ -3,27 +3,220 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Primary -->
 <title>Why Hexposure · A grade is not a security program</title>
 <meta name="description" content="A letter grade is not a security program. Security ratings score you from thin passive signals. Hexposure sees more, explains what it means, and helps you move the number." />
-<link rel="alternate" hreflang="en" href="https://hexposure.ca/en/why.html">
-<link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/why.html">
-<link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/why.html">
+<link rel="canonical" href="https://hexposure.ca/en/why.html" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="Hexius" />
+
+<!-- Text & data mining reservation: search indexing yes, AI training and
+     retrieval-as-answer-input no. Full policy in /ai.txt and /robots.txt. -->
+<meta name="tdm-reservation" content="1" />
+<meta name="tdm-policy" content="https://hexposure.ca/ai.txt" />
+
+<!-- Language alternates (French is x-default; see CLAUDE.md §2) -->
+<link rel="alternate" hreflang="en" href="https://hexposure.ca/en/why.html" />
+<link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/why.html" />
+<link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/why.html" />
+
+<!-- Open Graph: Slack / LinkedIn / iMessage / WhatsApp / Facebook unfurls -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Hexposure" />
+<meta property="og:locale" content="en_CA" />
+<meta property="og:locale:alternate" content="fr_CA" />
+<meta property="og:url" content="https://hexposure.ca/en/why.html" />
+<meta property="og:title" content="A letter grade is not a security program." />
+<meta property="og:description" content="Security ratings score you from a thin layer of passive signals and stop there. Hexposure sees more, explains what it means, and helps you move the number." />
+<meta property="og:image" content="https://hexposure.ca/og/why-en.png" />
+<meta property="og:image:secure_url" content="https://hexposure.ca/og/why-en.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Why Hexposure — a letter grade is not a security program." />
+
+<!-- X / Twitter: large card so the image leads on desktop and mobile alike -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="A letter grade is not a security program." />
+<meta name="twitter:description" content="Security ratings score you from a thin layer of passive signals and stop there. Hexposure sees more, explains what it means, and helps you move the number." />
+<meta name="twitter:image" content="https://hexposure.ca/og/why-en.png" />
+<meta name="twitter:image:alt" content="Why Hexposure — a letter grade is not a security program." />
+
+<!-- Icons, manifest, browser chrome --><link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#f2effa">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Hexposure">
+<meta name="application-name" content="Hexposure">
+<meta name="theme-color" content="#f2effa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#110e1c" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+
+<!-- Type + styles -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <script src="/site.js"></script>
+
+<!-- Analytics: self-hosted Umami, cookieless. Deferred so it never blocks paint. -->
+<link rel="dns-prefetch" href="https://analytics.hexius.org">
+<script defer src="https://analytics.hexius.org/script.js" data-website-id="a3abc254-168a-4023-bbdc-b6d5d6811f8e"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hexposure.ca/#organization",
+      "name": "Hexposure",
+      "alternateName": "Hexposure EASM",
+      "url": "https://hexposure.ca/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hexposure.ca/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "image": "https://hexposure.ca/og/why-en.png",
+      "email": "contact@hexius.com",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressRegion": "QC"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Hexius",
+        "url": "https://hexius.com"
+      },
+      "sameAs": ["https://hexius.com"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "contact@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "security",
+          "email": "security@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "privacy",
+          "email": "privacy@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hexposure.ca/#website",
+      "url": "https://hexposure.ca/",
+      "name": "Hexposure",
+      "description": "External attack-surface management. See everything, fix what matters, prove you're covered.",
+      "publisher": { "@id": "https://hexposure.ca/#organization" },
+      "inLanguage": ["fr-CA", "en-CA"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hexposure.ca/en/why.html#webpage",
+      "url": "https://hexposure.ca/en/why.html",
+      "name": "A letter grade is not a security program.",
+      "description": "Security ratings score you from a thin layer of passive signals and stop there. Hexposure sees more, explains what it means, and helps you move the number.",
+      "inLanguage": "en-CA",
+      "isPartOf": { "@id": "https://hexposure.ca/#website" },
+      "about": { "@id": "https://hexposure.ca/#organization" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hexposure.ca/og/why-en.png",
+        "width": 1200,
+        "height": 630
+      },
+      "breadcrumb": { "@id": "https://hexposure.ca/en/why.html#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hexposure.ca/en/why.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hexposure.ca/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Hexposure · A grade is not a security program",
+          "item": "https://hexposure.ca/en/why.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://hexposure.ca/en/why.html#faq",
+      "isPartOf": { "@id": "https://hexposure.ca/en/why.html#webpage" },
+      "inLanguage": "en-CA",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need to install anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Hexposure works entirely from the outside, the same vantage point an attacker has. There are no agents, no code changes, and no internal access. You verify your domains and we take it from there."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do you scan, and is any of it risky?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "More than 250+ distinct checks per scan, in two modes. Passive checks never touch your systems: certificate transparency, DNS, public breach data, code repositories, look-alike domains. Active checks stay inside what an ordinary visitor can see: exposed services, headers, TLS configuration, reachable files and panels. Active doesn't mean intrusive — no exploitation, no brute force, no data extraction, nothing that could slow your systems down. Traffic is rate-limited and comes from published IP addresses so your team can recognize it. This is not a penetration test."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from a security rating?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ratings infer a grade from passive signals and leave you to interpret it. Hexposure actively discovers and tests far more of your surface, ranks findings by business risk, tells you exactly what to fix, and gives you a score that moves as you do."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What do I actually get?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A living inventory of everything you expose, a ranked short list of what to fix first with step-by-step guidance, attack-path analysis, a trended health score, a board-ready report, and a named security advisor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often does it run?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Your first scan begins as soon as your domains are verified. After that, Hexposure re-scans every month and automatically re-checks your fixes, so your inventory and score stay current."
+          }
+        }
+      ]
+    }]
+}
+</script>
+
 </head>
 
 <body>
 
 <nav class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/en/index.html" aria-label="Hexposure home">
+    <a class="brand" href="/en/" aria-label="Hexposure home">
       <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true">
   <defs><linearGradient id="gN" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c3aef2"/><stop offset="52%" stop-color="#8b6ce6"/><stop offset="100%" stop-color="#5e3fb0"/></linearGradient></defs>
   <path d="M50 8 L86.6 29 L86.6 71 L50 92 L13.4 71 L13.4 29 Z" fill="none" stroke="url(#gN)" stroke-width="4.5"/>
@@ -33,17 +226,17 @@
       <span class="lw"><span class="h">Hex</span>posure</span>
     </a>
     <div class="nav-links">
-      <a href="/en/index.html">Home</a>
+      <a href="/en/">Home</a>
       <a href="/en/platform.html">Platform</a>
       <a href="/en/why.html" class="on">Why Hexposure</a>
     </div>
     <div class="nav-cta">
       <a class="lang-switch" href="/fr/why.html" aria-label="Language" hreflang="fr">FR</a>
       <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme" onclick="hxpToggleTheme()">
-        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg aria-hidden="true" focusable="false" class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg aria-hidden="true" focusable="false" class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
-      <a class="btn primary" href="/en/index.html#join">Join the waitlist</a>
+      <a class="btn primary" href="/en/#join">Join the waitlist</a>
     </div>
   </div>
 </nav>
@@ -71,24 +264,24 @@
     <div class="pillars">
       <div class="pcard reveal">
         <span class="step">BECAUSE</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 17 9 5 9-5"/><path d="m3 12 9 5 9-5"/></svg></div>
+        <div class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7l9 5 9-5-9-5Z"/><path d="m3 17 9 5 9-5"/><path d="m3 12 9 5 9-5"/></svg></div>
         <h3>We see <span>more</span></h3>
         <p>Active discovery across your whole external surface, not just the assets you remembered to list. The inventory is complete.</p>
       </div>
       <div class="pcard reveal">
         <span class="step">YOU GET</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
+        <div class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
         <h3>Risk that's <span>real</span></h3>
         <p>Ranking is only honest when it's based on everything. Complete visibility means the priority list reflects your actual exposure.</p>
       </div>
       <div class="pcard reveal">
         <span class="step">SO YOU CAN</span>
-        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/></svg></div>
+        <div class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/></svg></div>
         <h3>Assure with <span>confidence</span></h3>
         <p>A score built on the full picture is a score you can defend to your board, your auditors, and yourself.</p>
       </div>
     </div>
-    <div class="arc-line reveal"><b>Visibility</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><b>Business risk</b><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><b>Assurance</b></div>
+    <div class="arc-line reveal"><b>Visibility</b><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><b>Business risk</b><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><b>Assurance</b></div>
   </div>
 </section>
 
@@ -107,7 +300,7 @@
           <tr><td class="ft">"Do we see our whole surface?"</td><td class="col"><span class="mono">known assets only</span></td><td class="col us">Monthly deep-scan inventory</td></tr>
           <tr><td class="ft">"What's the worst that's exposed?"</td><td class="col"><span class="mono">inferred signals</span></td><td class="col us">Actively probed &amp; confirmed</td></tr>
           <tr><td class="ft">"Is our risk going up or down?"</td><td class="col"><span class="mono">static grade</span></td><td class="col us">Trended score + evidence</td></tr>
-          <tr><td class="ft">"What do we do about it?"</td><td class="col"><svg class="ci no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></td><td class="col us">Ranked remediation plan</td></tr>
+          <tr><td class="ft">"What do we do about it?"</td><td class="col"><svg aria-hidden="true" focusable="false" class="ci no" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 6 6 18M6 6l12 12"/></svg></td><td class="col us">Ranked remediation plan</td></tr>
           <tr><td class="ft">"Who do we call?"</td><td class="col"><span class="mono">support ticket</span></td><td class="col us">Dedicated advisor</td></tr>
           <tr><td class="ft">"Can I put this in the deck?"</td><td class="col"><span class="mono">letter only</span></td><td class="col us">Board-ready report</td></tr>
         </tbody>
@@ -133,23 +326,23 @@
     </div>
     <div class="faq reveal">
       <details open>
-        <summary>Do I need to install anything?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <summary>Do I need to install anything?<svg aria-hidden="true" focusable="false" class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
         <div class="ans">No. Hexposure works entirely from the outside, the same vantage point an attacker has. There are no agents, no code changes, and no internal access. You verify your domains and we take it from there.</div>
       </details>
       <details>
-        <summary>How much do you scan, and is any of it risky?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
-        <div class="ans">More than 400 distinct checks per scan, in two modes. Passive checks never touch your systems: certificate transparency, DNS, public breach data, code repositories, look-alike domains. Active checks stay inside what an ordinary visitor can see: exposed services, headers, TLS configuration, reachable files and panels. Active doesn't mean intrusive — no exploitation, no brute force, no data extraction, nothing that could slow your systems down. Traffic is rate-limited and comes from published IP addresses so your team can recognize it. This is not a penetration test.</div>
+        <summary>How much do you scan, and is any of it risky?<svg aria-hidden="true" focusable="false" class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <div class="ans">More than 250+ distinct checks per scan, in two modes. Passive checks never touch your systems: certificate transparency, DNS, public breach data, code repositories, look-alike domains. Active checks stay inside what an ordinary visitor can see: exposed services, headers, TLS configuration, reachable files and panels. Active doesn't mean intrusive — no exploitation, no brute force, no data extraction, nothing that could slow your systems down. Traffic is rate-limited and comes from published IP addresses so your team can recognize it. This is not a penetration test.</div>
       </details>
       <details>
-        <summary>How is this different from a security rating?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <summary>How is this different from a security rating?<svg aria-hidden="true" focusable="false" class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
         <div class="ans">Ratings infer a grade from passive signals and leave you to interpret it. Hexposure actively discovers and tests far more of your surface, ranks findings by business risk, tells you exactly what to fix, and gives you a score that moves as you do.</div>
       </details>
       <details>
-        <summary>What do I actually get?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <summary>What do I actually get?<svg aria-hidden="true" focusable="false" class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
         <div class="ans">A living inventory of everything you expose, a ranked short list of what to fix first with step-by-step guidance, attack-path analysis, a trended health score, a board-ready report, and a named security advisor.</div>
       </details>
       <details>
-        <summary>How often does it run?<svg class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
+        <summary>How often does it run?<svg aria-hidden="true" focusable="false" class="pm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></summary>
         <div class="ans">Your first scan begins as soon as your domains are verified. After that, Hexposure re-scans every month and automatically re-checks your fixes, so your inventory and score stay current.</div>
       </details>
     </div>
@@ -163,8 +356,8 @@
     <span class="kicker center">Private beta</span>
     <h2>Trade the letter grade for the full picture.</h2>
     <p>Join the waitlist and we'll run your first external scan, then show you exactly what a ratings vendor can't.</p>
-    <a class="btn primary" href="/en/index.html#join" style="padding:14px 24px;">Request access
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a class="btn primary" href="/en/#join" style="padding:14px 24px;">Request access
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
 
@@ -183,17 +376,17 @@
       <p>External attack-surface management. See everything, fix what matters, prove you're covered.</p>
     </div>
     <div class="foot-col">
-      <h5>Product</h5>
+      <h3>Product</h3>
       <a href="/en/platform.html#visibility">Visibility</a>
       <a href="/en/platform.html#business-risk">Business risk</a>
       <a href="/en/platform.html#assurance">Assurance</a>
       <a href="/en/platform.html">Platform overview</a>
     </div>
     <div class="foot-col">
-      <h5>Company</h5>
+      <h3>Company</h3>
       <a href="/en/why.html">Why Hexposure</a>
       <a href="/en/why.html#compare">vs. ratings</a>
-      <a href="/en/index.html#join">Join the waitlist</a>
+      <a href="/en/#join">Join the waitlist</a>
     </div>
   </div>
   <div class="foot-bottom">

@@ -1,0 +1,24 @@
+/* TEAM */
+
+  Hexposure is built by Hexius.
+  Site: https://hexius.com
+  Contact: contact@hexius.com
+  Location: Quebec, Canada
+
+/* THANKS */
+
+  To every security team that let us watch them fight 765 alerts to find the one
+  that mattered. That's the product.
+
+/* SITE */
+
+  Languages: Français (default), English
+  Standards: HTML5, CSS3, JSON-LD, Open Graph, RFC 9116
+  Components: Jekyll, GitHub Pages
+  Typefaces: Sora, IBM Plex Mono
+  Colours: iris violet — #c3aef2 → #8b6ce6 → #5e3fb0
+  Doctype: hand-written, no framework, no tracking cookies
+
+/* SECURITY */
+
+  Found something? security@hexius.com — see https://hexposure.ca/.well-known/security.txt

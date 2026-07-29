@@ -3,27 +3,172 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Plateforme · Hexposure</title>
-<meta name="description" content="Un seul système qui voit, classe et prouve. Hexposure exécute une boucle continue sur votre surface externe&nbsp;: visibilité, risque d'affaires et assurance prête pour le conseil." />
-<link rel="alternate" hreflang="en" href="https://hexposure.ca/en/platform.html">
-<link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/platform.html">
-<link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/platform.html">
+
+<!-- Primary -->
+<title>Plateforme · Surface d&#39;attaque externe · Hexposure</title>
+<meta name="description" content="Un seul système qui voit, classe et prouve. Hexposure exécute une boucle continue sur votre surface externe : visibilité, risque d&#39;affaires et assurance prête pour le conseil." />
+<link rel="canonical" href="https://hexposure.ca/fr/platform.html" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="Hexius" />
+
+<!-- Text & data mining reservation: search indexing yes, AI training and
+     retrieval-as-answer-input no. Full policy in /ai.txt and /robots.txt. -->
+<meta name="tdm-reservation" content="1" />
+<meta name="tdm-policy" content="https://hexposure.ca/ai.txt" />
+
+<!-- Language alternates (French is x-default; see CLAUDE.md §2) -->
+<link rel="alternate" hreflang="en" href="https://hexposure.ca/en/platform.html" />
+<link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/platform.html" />
+<link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/platform.html" />
+
+<!-- Open Graph: Slack / LinkedIn / iMessage / WhatsApp / Facebook unfurls -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Hexposure" />
+<meta property="og:locale" content="fr_CA" />
+<meta property="og:locale:alternate" content="en_CA" />
+<meta property="og:url" content="https://hexposure.ca/fr/platform.html" />
+<meta property="og:title" content="Un seul système qui voit, classe et prouve." />
+<meta property="og:description" content="Une boucle continue sur votre surface externe : découvrir chaque actif exposé, le classer selon le risque d&#39;affaires, et en tirer une assurance défendable." />
+<meta property="og:image" content="https://hexposure.ca/og/platform-fr.png" />
+<meta property="og:image:secure_url" content="https://hexposure.ca/og/platform-fr.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Plateforme Hexposure — un seul système qui voit, classe et prouve." />
+
+<!-- X / Twitter: large card so the image leads on desktop and mobile alike -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Un seul système qui voit, classe et prouve." />
+<meta name="twitter:description" content="Une boucle continue sur votre surface externe : découvrir chaque actif exposé, le classer selon le risque d&#39;affaires, et en tirer une assurance défendable." />
+<meta name="twitter:image" content="https://hexposure.ca/og/platform-fr.png" />
+<meta name="twitter:image:alt" content="Plateforme Hexposure — un seul système qui voit, classe et prouve." />
+
+<!-- Icons, manifest, browser chrome --><link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#f2effa">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Hexposure">
+<meta name="application-name" content="Hexposure">
+<meta name="theme-color" content="#f2effa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#110e1c" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+
+<!-- Type + styles -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <script src="/site.js"></script>
+
+<!-- Analytics: self-hosted Umami, cookieless. Deferred so it never blocks paint. -->
+<link rel="dns-prefetch" href="https://analytics.hexius.org">
+<script defer src="https://analytics.hexius.org/script.js" data-website-id="a3abc254-168a-4023-bbdc-b6d5d6811f8e"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hexposure.ca/#organization",
+      "name": "Hexposure",
+      "alternateName": "Hexposure EASM",
+      "url": "https://hexposure.ca/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hexposure.ca/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "image": "https://hexposure.ca/og/platform-fr.png",
+      "email": "contact@hexius.com",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressRegion": "QC"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Hexius",
+        "url": "https://hexius.com"
+      },
+      "sameAs": ["https://hexius.com"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "contact@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "security",
+          "email": "security@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "privacy",
+          "email": "privacy@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hexposure.ca/#website",
+      "url": "https://hexposure.ca/",
+      "name": "Hexposure",
+      "description": "External attack-surface management. See everything, fix what matters, prove you're covered.",
+      "publisher": { "@id": "https://hexposure.ca/#organization" },
+      "inLanguage": ["fr-CA", "en-CA"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hexposure.ca/fr/platform.html#webpage",
+      "url": "https://hexposure.ca/fr/platform.html",
+      "name": "Un seul système qui voit, classe et prouve.",
+      "description": "Une boucle continue sur votre surface externe : découvrir chaque actif exposé, le classer selon le risque d'affaires, et en tirer une assurance défendable.",
+      "inLanguage": "fr-CA",
+      "isPartOf": { "@id": "https://hexposure.ca/#website" },
+      "about": { "@id": "https://hexposure.ca/#organization" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hexposure.ca/og/platform-fr.png",
+        "width": 1200,
+        "height": 630
+      },
+      "breadcrumb": { "@id": "https://hexposure.ca/fr/platform.html#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hexposure.ca/fr/platform.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Accueil",
+          "item": "https://hexposure.ca/fr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Plateforme · Hexposure",
+          "item": "https://hexposure.ca/fr/platform.html"
+        }
+      ]
+    }]
+}
+</script>
+
 </head>
 
 <body>
 
 <nav class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/fr/index.html" aria-label="Accueil Hexposure">
+    <a class="brand" href="/fr/" aria-label="Accueil Hexposure">
       <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true">
   <defs><linearGradient id="gN" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c3aef2"/><stop offset="52%" stop-color="#8b6ce6"/><stop offset="100%" stop-color="#5e3fb0"/></linearGradient></defs>
   <path d="M50 8 L86.6 29 L86.6 71 L50 92 L13.4 71 L13.4 29 Z" fill="none" stroke="url(#gN)" stroke-width="4.5"/>
@@ -33,17 +178,17 @@
       <span class="lw"><span class="h">Hex</span>posure</span>
     </a>
     <div class="nav-links">
-      <a href="/fr/index.html">Accueil</a>
+      <a href="/fr/">Accueil</a>
       <a href="/fr/platform.html" class="on">Plateforme</a>
       <a href="/fr/why.html">Pourquoi Hexposure</a>
     </div>
     <div class="nav-cta">
       <a class="lang-switch" href="/en/platform.html" aria-label="Langue" hreflang="en">EN</a>
       <button class="theme-toggle" type="button" title="Changer de thème" aria-label="Changer de thème" onclick="hxpToggleTheme()">
-        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg aria-hidden="true" focusable="false" class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg aria-hidden="true" focusable="false" class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
-      <a class="btn primary" href="/fr/index.html#join">S'inscrire à la liste d'attente</a>
+      <a class="btn primary" href="/fr/#join">S'inscrire à la liste d'attente</a>
     </div>
   </div>
 </nav>
@@ -56,7 +201,7 @@
       <span class="badge"><span class="dot"></span>La plateforme</span>
       <h1>Un seul système qui <span class="grad">voit, classe et prouve.</span></h1>
       <p class="lead">Hexposure exécute une boucle continue sur votre surface externe. Elle commence par tout voir, pondère ce qu'elle trouve selon le risque d'affaires, et se termine par un score de santé que vous pouvez défendre. Voici chaque rôle, de près.</p>
-      <div class="arc-line" style="justify-content:flex-start;margin-top:24px;"><a href="#visibility"><b>Visibilité</b></a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><a href="#business-risk"><b>Risque d'affaires</b></a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><a href="#assurance"><b>Assurance</b></a>
+      <div class="arc-line" style="justify-content:flex-start;margin-top:24px;"><a href="#visibility"><b>Visibilité</b></a><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><a href="#business-risk"><b>Risque d'affaires</b></a><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg><a href="#assurance"><b>Assurance</b></a>
       </div>
     </div>
   </div>
@@ -70,21 +215,21 @@
         <p>La plupart des outils ne vérifient que les actifs que vous connaissez déjà. Hexposure part de l'extérieur et découvre le reste, puis tient un <b>inventaire vivant</b> mis à jour chaque mois.</p>
         <p>Le serveur de préproduction oublié, la sauvegarde résiduelle, le sous-domaine tiers, le domaine sosie enregistré : si c'est accessible depuis Internet, c'est sur votre carte.</p>
         <ul class="flist">
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Sous-domaines, IP &amp; services actifs&nbsp;</b><span>énumérés en continu</span></li>
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Points de terminaison &amp; fichiers exposés&nbsp;</b><span>que les scanners ignorent</span></li>
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Certificats &amp; domaines sosies&nbsp;</b><span>suivis dans le temps</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Sous-domaines, IP &amp; services actifs&nbsp;</b><span>énumérés en continu</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Points de terminaison &amp; fichiers exposés&nbsp;</b><span>que les scanners ignorent</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Certificats &amp; domaines sosies&nbsp;</b><span>suivis dans le temps</span></li>
         </ul>
       </div>
       <div class="feat-media reveal"><div class="inv">
   <div class="ivh"><span class="t">Inventaire en direct · yourcompany</span><span class="n">463 actifs</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></span><span class="nm">sous-domaines</span><span class="ct">186</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><span class="nm">IP &amp; services</span><span class="ct">94</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"/></svg></span><span class="nm">points de terminaison</span><span class="ct">71</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><span class="nm">fichiers exposés</span><span class="ct">23</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/></svg></span><span class="nm">certificats</span><span class="ct">28</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></span><span class="nm">domaines sosies</span><span class="ct">6</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><span class="nm">vulnérabilités</span><span class="ct">42</span></div>
-  <div class="ivrow"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span><span class="nm">technologies</span><span class="ct">13</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg></span><span class="nm">sous-domaines</span><span class="ct">186</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span><span class="nm">IP &amp; services</span><span class="ct">94</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17l6-6-6-6M12 19h8"/></svg></span><span class="nm">points de terminaison</span><span class="ct">71</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></span><span class="nm">fichiers exposés</span><span class="ct">23</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/></svg></span><span class="nm">certificats</span><span class="ct">28</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></span><span class="nm">domaines sosies</span><span class="ct">6</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg></span><span class="nm">vulnérabilités</span><span class="ct">42</span></div>
+  <div class="ivrow"><span class="ico"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></span><span class="nm">technologies</span><span class="ct">13</span></div>
 </div>
       </div>
     </div>
@@ -99,9 +244,9 @@
         <p>Un mur de «&nbsp;critiques&nbsp;» n'est pas un plan. Hexposure pondère chaque exposition selon l'<b>exploitabilité et l'impact d'affaires</b> (données clients, revenus, réputation) et relie les constatations connexes en chemins d'attaque.</p>
         <p>Ce que vous recevez, ce n'est pas 765 constatations. C'est <b>les quelques éléments qui comptent, dans l'ordre</b>, chacun avec un «&nbsp;pourquoi c'est important&nbsp;» en langage clair et un correctif étape par étape.</p>
         <ul class="flist">
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Classement pondéré par l'impact&nbsp;</b><span>pas la gravité du scanner</span></li>
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Chemins d'attaque chaînés&nbsp;</b><span>corrigez-en un, neutralisez-en plusieurs</span></li>
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Remédiation étape par étape&nbsp;</b><span>pour chaque élément</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Classement pondéré par l'impact&nbsp;</b><span>pas la gravité du scanner</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Chemins d'attaque chaînés&nbsp;</b><span>corrigez-en un, neutralisez-en plusieurs</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Remédiation étape par étape&nbsp;</b><span>pour chaque élément</span></li>
         </ul>
       </div>
       <div class="feat-media reveal"><div class="ranked">
@@ -125,9 +270,9 @@
         <p>Tout se résume à <b>un seul score de santé</b>, pondéré par le risque d'affaires, qui évolue à mesure que vous corrigez. Parce qu'il repose sur bien plus de visibilité qu'une firme de cotation, c'est un chiffre que vous pouvez réellement défendre.</p>
         <p>Derrière lui se trouvent un <b>rapport prêt pour le conseil</b> et un <b>conseiller humain attitré</b> qui connaît votre environnement et participe à vos revues. De l'assurance, pas une cote de façade.</p>
         <ul class="flist">
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Un score qui tend&nbsp;</b><span>à la baisse, trimestre après trimestre</span></li>
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Rapport prêt pour le conseil&nbsp;</b><span>généré, pas assemblé à la main</span></li>
-          <li><span class="k"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Conseiller attitré&nbsp;</b><span>joignable au moment où vous en avez besoin</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Un score qui tend&nbsp;</b><span>à la baisse, trimestre après trimestre</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Rapport prêt pour le conseil&nbsp;</b><span>généré, pas assemblé à la main</span></li>
+          <li><span class="k"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span><b>Conseiller attitré&nbsp;</b><span>joignable au moment où vous en avez besoin</span></li>
         </ul>
       </div>
       <div class="feat-media reveal"><div class="report">
@@ -136,11 +281,11 @@
     <div>
       <div class="lab">Score de santé</div>
       <div class="num" style="color:var(--accent)">72<span class="of">/100</span></div>
-      <div class="delta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>+25 depuis l'intégration</div>
+      <div class="delta"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 19V5M5 12l7-7 7 7"/></svg>+25 depuis l'intégration</div>
     </div>
     <div>
       <div class="lab">Trajectoire sur 90 jours</div>
-      <svg class="rep-chart" viewBox="0 0 280 80" preserveAspectRatio="none" fill="none" aria-hidden="true">
+      <svg aria-hidden="true" focusable="false" class="rep-chart" viewBox="0 0 280 80" preserveAspectRatio="none" fill="none" aria-hidden="true">
         <defs><linearGradient id="rg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8b6ce6" stop-opacity="0.32"/><stop offset="100%" stop-color="#8b6ce6" stop-opacity="0"/></linearGradient></defs>
         <path d="M4,62 L50,58 L96,50 L142,38 L188,28 L234,19 L276,13 L276,80 L4,80 Z" fill="url(#rg)"/>
         <path d="M4,62 L50,58 L96,50 L142,38 L188,28 L234,19 L276,13" stroke="#8b6ce6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
@@ -166,10 +311,10 @@
       <p>Découvrir, tester, classer, corriger, puis rebalayer chaque mois et revérifier vos correctifs automatiquement.</p>
     </div>
     <div class="flow">
-      <div class="fstep reveal"><div class="n">1</div><h4>Découvrir</h4><p>Chaque sous-domaine, IP, service, point de terminaison et certificat lié à vos domaines&nbsp;: un inventaire vivant.</p></div>
-      <div class="fstep reveal"><div class="n">2</div><h4>Tester</h4><p>Chaque actif sondé de l'extérieur : ports ouverts, TLS faible, panneaux exposés, secrets divulgués, domaines sosies.</p></div>
-      <div class="fstep reveal"><div class="n">3</div><h4>Classer</h4><p>Pondéré selon la gravité, l'exploitabilité et l'impact d'affaires en un score et une liste classée.</p></div>
-      <div class="fstep reveal"><div class="n">4</div><h4>Corriger &amp; revérifier</h4><p>Traitez la liste avec accompagnement ; le prochain balayage confirme chaque correctif et fait bouger votre score.</p></div>
+      <div class="fstep reveal"><div class="n">1</div><h3>Découvrir</h3><p>Chaque sous-domaine, IP, service, point de terminaison et certificat lié à vos domaines&nbsp;: un inventaire vivant.</p></div>
+      <div class="fstep reveal"><div class="n">2</div><h3>Détecter</h3><p>Chaque actif sondé de l'extérieur : ports ouverts, TLS faible, panneaux exposés, secrets divulgués, domaines sosies.</p></div>
+      <div class="fstep reveal"><div class="n">3</div><h3>Classer</h3><p>Pondéré selon la gravité, l'exploitabilité et l'impact d'affaires en un score et une liste classée.</p></div>
+      <div class="fstep reveal"><div class="n">4</div><h3>Corriger &amp; revérifier</h3><p>Traitez la liste avec accompagnement ; le prochain balayage confirme chaque correctif et fait bouger votre score.</p></div>
     </div>
   </div>
 </section>
@@ -181,8 +326,8 @@
     <span class="kicker center">Bêta privée</span>
     <h2>Voyez toute la boucle sur votre propre surface.</h2>
     <p>Inscrivez-vous à la liste d'attente et nous lancerons votre premier balayage externe&nbsp;: inventaire, risques classés et votre premier score de santé.</p>
-    <a class="btn primary" href="/fr/index.html#join" style="padding:14px 24px;">Demander l'accès
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a class="btn primary" href="/fr/#join" style="padding:14px 24px;">Demander l'accès
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
   </div>
 </section>
 
@@ -201,17 +346,17 @@
       <p>Gestion de la surface d'attaque externe. Voyez tout, corrigez l'essentiel, prouvez votre sécurité.</p>
     </div>
     <div class="foot-col">
-      <h5>Produit</h5>
+      <h3>Produit</h3>
       <a href="/fr/platform.html#visibility">Visibilité</a>
       <a href="/fr/platform.html#business-risk">Risque d'affaires</a>
       <a href="/fr/platform.html#assurance">Assurance</a>
       <a href="/fr/platform.html">Aperçu de la plateforme</a>
     </div>
     <div class="foot-col">
-      <h5>Entreprise</h5>
+      <h3>Entreprise</h3>
       <a href="/fr/why.html">Pourquoi Hexposure</a>
       <a href="/fr/why.html#compare">vs. les cotes</a>
-      <a href="/fr/index.html#join">S'inscrire à la liste d'attente</a>
+      <a href="/fr/#join">S'inscrire à la liste d'attente</a>
     </div>
   </div>
   <div class="foot-bottom">

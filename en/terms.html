@@ -3,27 +3,172 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Primary -->
 <title>Terms of Use · Hexposure</title>
 <meta name="description" content="The terms governing your access to and use of Hexposure, a Hexius product. Scan only domains you own or are authorized to scan. Your scan data is yours." />
-<link rel="alternate" hreflang="en" href="https://hexposure.ca/en/terms.html">
-<link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/terms.html">
-<link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/terms.html">
+<link rel="canonical" href="https://hexposure.ca/en/terms.html" />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+<meta name="author" content="Hexius" />
+
+<!-- Text & data mining reservation: search indexing yes, AI training and
+     retrieval-as-answer-input no. Full policy in /ai.txt and /robots.txt. -->
+<meta name="tdm-reservation" content="1" />
+<meta name="tdm-policy" content="https://hexposure.ca/ai.txt" />
+
+<!-- Language alternates (French is x-default; see CLAUDE.md §2) -->
+<link rel="alternate" hreflang="en" href="https://hexposure.ca/en/terms.html" />
+<link rel="alternate" hreflang="fr" href="https://hexposure.ca/fr/terms.html" />
+<link rel="alternate" hreflang="x-default" href="https://hexposure.ca/fr/terms.html" />
+
+<!-- Open Graph: Slack / LinkedIn / iMessage / WhatsApp / Facebook unfurls -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Hexposure" />
+<meta property="og:locale" content="en_CA" />
+<meta property="og:locale:alternate" content="fr_CA" />
+<meta property="og:url" content="https://hexposure.ca/en/terms.html" />
+<meta property="og:title" content="Terms of Use · Hexposure" />
+<meta property="og:description" content="The terms governing your access to and use of Hexposure. Scan only domains you own or are authorized to scan. Your scan data is yours." />
+<meta property="og:image" content="https://hexposure.ca/og/terms-en.png" />
+<meta property="og:image:secure_url" content="https://hexposure.ca/og/terms-en.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Hexposure — Terms of Use." />
+
+<!-- X / Twitter: large card so the image leads on desktop and mobile alike -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Terms of Use · Hexposure" />
+<meta name="twitter:description" content="The terms governing your access to and use of Hexposure. Scan only domains you own or are authorized to scan. Your scan data is yours." />
+<meta name="twitter:image" content="https://hexposure.ca/og/terms-en.png" />
+<meta name="twitter:image:alt" content="Hexposure — Terms of Use." />
+
+<!-- Icons, manifest, browser chrome --><link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta name="theme-color" content="#f2effa">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Hexposure">
+<meta name="application-name" content="Hexposure">
+<meta name="theme-color" content="#f2effa" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#110e1c" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+
+<!-- Type + styles -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 <script src="/site.js"></script>
+
+<!-- Analytics: self-hosted Umami, cookieless. Deferred so it never blocks paint. -->
+<link rel="dns-prefetch" href="https://analytics.hexius.org">
+<script defer src="https://analytics.hexius.org/script.js" data-website-id="a3abc254-168a-4023-bbdc-b6d5d6811f8e"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://hexposure.ca/#organization",
+      "name": "Hexposure",
+      "alternateName": "Hexposure EASM",
+      "url": "https://hexposure.ca/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://hexposure.ca/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "image": "https://hexposure.ca/og/terms-en.png",
+      "email": "contact@hexius.com",
+      "foundingDate": "2026",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressRegion": "QC"
+      },
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Hexius",
+        "url": "https://hexius.com"
+      },
+      "sameAs": ["https://hexius.com"],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "contact@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "security",
+          "email": "security@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "privacy",
+          "email": "privacy@hexius.com",
+          "availableLanguage": ["en", "fr"]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hexposure.ca/#website",
+      "url": "https://hexposure.ca/",
+      "name": "Hexposure",
+      "description": "External attack-surface management. See everything, fix what matters, prove you're covered.",
+      "publisher": { "@id": "https://hexposure.ca/#organization" },
+      "inLanguage": ["fr-CA", "en-CA"]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://hexposure.ca/en/terms.html#webpage",
+      "url": "https://hexposure.ca/en/terms.html",
+      "name": "Terms of Use · Hexposure",
+      "description": "The terms governing your access to and use of Hexposure. Scan only domains you own or are authorized to scan. Your scan data is yours.",
+      "inLanguage": "en-CA",
+      "isPartOf": { "@id": "https://hexposure.ca/#website" },
+      "about": { "@id": "https://hexposure.ca/#organization" },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://hexposure.ca/og/terms-en.png",
+        "width": 1200,
+        "height": 630
+      },
+      "breadcrumb": { "@id": "https://hexposure.ca/en/terms.html#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://hexposure.ca/en/terms.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://hexposure.ca/en/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Terms of Use",
+          "item": "https://hexposure.ca/en/terms.html"
+        }
+      ]
+    }]
+}
+</script>
+
 </head>
 
 <body>
 
 <nav class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/en/index.html" aria-label="Hexposure home">
+    <a class="brand" href="/en/" aria-label="Hexposure home">
       <svg width="32" height="32" viewBox="0 0 100 100" aria-hidden="true">
   <defs><linearGradient id="gN" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#c3aef2"/><stop offset="52%" stop-color="#8b6ce6"/><stop offset="100%" stop-color="#5e3fb0"/></linearGradient></defs>
   <path d="M50 8 L86.6 29 L86.6 71 L50 92 L13.4 71 L13.4 29 Z" fill="none" stroke="url(#gN)" stroke-width="4.5"/>
@@ -33,17 +178,17 @@
       <span class="lw"><span class="h">Hex</span>posure</span>
     </a>
     <div class="nav-links">
-      <a href="/en/index.html">Home</a>
+      <a href="/en/">Home</a>
       <a href="/en/platform.html">Platform</a>
       <a href="/en/why.html">Why Hexposure</a>
     </div>
     <div class="nav-cta">
       <a class="lang-switch" href="/fr/terms.html" aria-label="Language" hreflang="fr">FR</a>
       <button class="theme-toggle" type="button" title="Toggle theme" aria-label="Toggle theme" onclick="hxpToggleTheme()">
-        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg aria-hidden="true" focusable="false" class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg aria-hidden="true" focusable="false" class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
       </button>
-      <a class="btn primary" href="/en/index.html#join">Join the waitlist</a>
+      <a class="btn primary" href="/en/#join">Join the waitlist</a>
     </div>
   </div>
 </nav>
@@ -90,7 +235,7 @@
       <!-- BODY -->
       <div class="legal-body">
         <div class="legal-callout">
-          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
+          <div class="ic"><svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.5 8 8 11 4.5-3 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/></svg></div>
           <p><b>The short version:</b> Use Hexposure only on domains you own or have explicit written permission to scan. Don't abuse the platform. Your scan data is yours. We're in beta, so the service is provided as-is with no uptime guarantees.</p>
         </div>
         <section id="acceptance">
@@ -219,17 +364,17 @@
       <p>External attack-surface management. See everything, fix what matters, prove you're covered.</p>
     </div>
     <div class="foot-col">
-      <h5>Product</h5>
+      <h3>Product</h3>
       <a href="/en/platform.html#visibility">Visibility</a>
       <a href="/en/platform.html#business-risk">Business risk</a>
       <a href="/en/platform.html#assurance">Assurance</a>
       <a href="/en/platform.html">Platform overview</a>
     </div>
     <div class="foot-col">
-      <h5>Company</h5>
+      <h3>Company</h3>
       <a href="/en/why.html">Why Hexposure</a>
       <a href="/en/why.html#compare">vs. ratings</a>
-      <a href="/en/index.html#join">Join the waitlist</a>
+      <a href="/en/#join">Join the waitlist</a>
     </div>
   </div>
   <div class="foot-bottom">

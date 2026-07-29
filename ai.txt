@@ -1,0 +1,38 @@
+# ai.txt — machine-readable usage terms for AI crawlers and answer engines.
+# Companion to /robots.txt (crawl permissions) and /llms.txt (site map for LLMs).
+
+User-agent: *
+
+# Search indexing only. This content may be listed and linked as a search result.
+# It may NOT be used as model training data, and it may NOT be retrieved as input
+# to generate an answer (RAG / grounding / summarization). The per-agent rules in
+# /robots.txt enforce this; the reservation is also asserted per-page via
+# <meta name="tdm-reservation" content="1">.
+Allow: /
+Allow-Training: no
+Allow-Search: yes
+Allow-Inference: no
+
+# Cloudflare Content Signals, same policy in one line.
+Content-Signal: search=yes, ai-input=no, ai-train=no
+
+# W3C TDM Reservation Protocol (EU DSM Art. 4 opt-out).
+TDM-Reservation: 1
+TDM-Policy: https://hexposure.ca/ai.txt
+
+# What we ask for in return.
+Attribution: Hexposure (https://hexposure.ca)
+Attribution-Required: yes
+Canonical: https://hexposure.ca/
+
+# Do not present generated text as a statement by Hexposure or Hexius, and do not
+# paraphrase the legal pages as advice. Link to them instead:
+#   https://hexposure.ca/en/privacy.html
+#   https://hexposure.ca/en/terms.html
+
+Contact: contact@hexius.com
+Security-Contact: security@hexius.com
+Policy: https://hexposure.ca/en/terms.html
+Policy: https://hexposure.ca/fr/terms.html
+Sitemap: https://hexposure.ca/sitemap.xml
+Last-Modified: 2026-07-29

@@ -1,0 +1,15 @@
+# Hexposure — security contact (RFC 9116)
+# Hexposure is an external attack-surface product; we take reports seriously and
+# we do not pursue good-faith researchers who follow the policy linked below.
+#
+# Test only hexposure.ca and its subdomains, stay within the acceptable-use terms,
+# and give us a reasonable window to fix before disclosing.
+
+Contact: mailto:security@hexius.com
+Expires: 2027-07-28T00:00:00.000Z
+Preferred-Languages: en, fr
+Canonical: https://hexposure.ca/.well-known/security.txt
+Canonical: https://hexposure.ca/security.txt
+Policy: https://hexposure.ca/en/terms.html#acceptable-use
+Policy: https://hexposure.ca/fr/terms.html#acceptable-use
+

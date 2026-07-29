@@ -280,7 +280,7 @@ section { position: relative; }
 .path .node:last-child { border-right: none; }
 .path .node .step { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: var(--text-4); font-weight: 600; }
 .path .node .sev { display: inline-flex; margin: 9px 0 8px; }
-.path .node h4 { font-size: 14px; font-weight: 600; margin: 0 0 5px; letter-spacing: -0.01em; }
+.path .node h3 { font-size: 14px; font-weight: 600; margin: 0 0 5px; letter-spacing: -0.01em; }
 .path .node p { font-size: 12.5px; color: var(--text-3); margin: 0; line-height: 1.5; }
 .path .node p b { color: var(--good); }
 .path .node .arrow { position: absolute; right: -9px; top: 50%; transform: translateY(-50%); z-index: 2; width: 18px; height: 18px; border-radius: 50%; background: var(--bg); border: 1px solid var(--border-2); display: grid; place-items: center; color: var(--accent-2); }
@@ -310,7 +310,7 @@ section { position: relative; }
 .fstep:nth-child(3) { border-top-color: var(--high); }
 .fstep:nth-child(4) { border-top-color: var(--good); }
 .fstep .n { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--text-4); font-weight: 600; }
-.fstep h4 { font-size: 16px; font-weight: 600; margin: 10px 0 7px; letter-spacing: -0.01em; }
+.fstep h3 { font-size: 16px; font-weight: 600; margin: 10px 0 7px; letter-spacing: -0.01em; }
 .fstep p { font-size: 13.5px; color: var(--text-3); line-height: 1.55; margin: 0; }
 
 /* FAQ */
@@ -340,7 +340,7 @@ footer { border-top: 1px solid var(--border); background: var(--bg-2); }
 .foot-brand .lw { font-size: 17px; font-weight: 800; letter-spacing: -0.03em; margin-top: 12px; display: block; }
 .foot-brand .lw .h { color: var(--accent); }
 .foot-brand p { color: var(--text-3); font-size: 13px; margin: 10px 0 0; max-width: 30ch; line-height: 1.55; }
-.foot-col h5 { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; color: var(--text-4); font-weight: 600; margin: 4px 0 14px; }
+.foot-col h3 { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase; color: var(--text-4); font-weight: 600; margin: 4px 0 14px; }
 .foot-col a { display: block; color: var(--text-3); font-size: 13.5px; padding: 5px 0; }
 .foot-col a:hover { color: var(--text); }
 .foot-bottom { border-top: 1px solid var(--border); }
