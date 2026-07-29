@@ -8,6 +8,37 @@ function hxpToggleTheme(){
   r.setAttribute('data-theme', t);
   try { localStorage.setItem('hxp-theme', t); } catch(e){}
 }
+// Mobile nav drop-down. CSS owns visibility; JS only flips .menu-open + aria.
+function hxpToggleMenu(force){
+  var nav = document.querySelector('.nav');
+  var btn = document.getElementById('nav-toggle');
+  if(!nav || !btn) return;
+  var open = typeof force === 'boolean' ? force : !nav.classList.contains('menu-open');
+  nav.classList.toggle('menu-open', open);
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+}
+document.addEventListener('DOMContentLoaded', function(){
+  var nav = document.querySelector('.nav');
+  var menu = document.getElementById('nav-menu');
+  if(!nav || !menu) return;
+  // Same-page anchors (the #join CTA) don't reload, so close explicitly.
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ hxpToggleMenu(false); });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && nav.classList.contains('menu-open')){
+      hxpToggleMenu(false);
+      var btn = document.getElementById('nav-toggle'); if(btn) btn.focus();
+    }
+  });
+  document.addEventListener('click', function(e){
+    if(nav.classList.contains('menu-open') && !nav.contains(e.target)) hxpToggleMenu(false);
+  });
+  window.addEventListener('resize', function(){
+    if(window.innerWidth > 720) hxpToggleMenu(false);
+  });
+});
+
 // Waitlist submission — same mechanism/destination as hexius-source-v2:
 // POST to the shared Google Form's formResponse endpoint via a hidden iframe
 // (no CORS). Email-only leads are tagged so they're recognizable in the sheet.
