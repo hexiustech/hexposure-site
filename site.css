@@ -186,6 +186,20 @@ section { position: relative; }
 .dchip .dtag.assets { color: var(--text-3); background: var(--surface-3); border-color: var(--border); }
 @media (max-width: 560px) { .pa-body { grid-template-columns: 1fr; justify-items: start; } .catrow { grid-template-columns: 104px 1fr 28px; } }
 
+/* MADE-IN BAND (hero → source strip separator) */
+.madein { border-bottom: 1px solid var(--border); background: var(--bg); }
+.madein-inner { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 13px var(--gutter); }
+.madein .rule { flex: 1 1 0; min-width: 0; max-width: 200px; height: 1px; background: linear-gradient(90deg, transparent, var(--border-strong)); }
+.madein .rule + .madein-t + .rule { background: linear-gradient(90deg, var(--border-strong), transparent); }
+.madein-t { margin: 0; flex: 0 1 auto; text-align: center; font-family: 'IBM Plex Mono', monospace; font-size: 12px; line-height: 1.4; letter-spacing: 0.03em; color: var(--text-3); text-wrap: balance; }
+/* .fl = the Québec + Canada marks; heights are set per context */
+.fl { display: inline-flex; align-items: center; gap: 7px; margin-right: 10px; vertical-align: -3px; }
+.fl .mk { width: auto; }
+.madein-t .mk-qc { height: 15px; }
+.madein-t .mk-ca { height: 14px; }
+@media (max-width: 640px) { .madein .rule { max-width: 44px; } .madein-inner { gap: 10px; padding-block: 12px; } .madein-t { font-size: 11.5px; } }
+@media (max-width: 400px) { .madein .rule { display: none; } }
+
 /* SOURCE STRIP */
 .strip { padding: 46px 0; border-bottom: 1px solid var(--border); background: var(--bg-2); }
 .strip-title { margin: 0 0 22px; text-align: center; font-size: clamp(20px, 2.6vw, 26px); font-weight: 700; letter-spacing: -0.02em; color: var(--text); }
@@ -366,6 +380,10 @@ footer { border-top: 1px solid var(--border); background: var(--bg-2); }
 .foot-bottom .copy { color: var(--text-4); font-size: 12.5px; }
 .foot-bottom .copy a { color: var(--text-3); text-decoration: underline; text-underline-offset: 2px; text-decoration-color: var(--border-strong); transition: 0.15s; }
 .foot-bottom .copy a:hover { color: var(--text-2); text-decoration-color: var(--accent); }
+.foot-bottom .foot-madein { display: inline-flex; align-items: center; color: var(--text-4); font-size: 12px; line-height: 1.4; }
+.foot-bottom .foot-madein .fl { gap: 5px; margin-right: 7px; }
+.foot-bottom .mk-qc { height: 12px; }
+.foot-bottom .mk-ca { height: 11px; }
 .foot-bottom .legal-links { display: flex; align-items: center; gap: 20px; }
 .foot-bottom .legal-links a { color: var(--text-4); font-size: 12.5px; transition: 0.15s; }
 .foot-bottom .legal-links a:hover { color: var(--text-2); }
